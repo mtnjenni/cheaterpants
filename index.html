@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="/Users/jenniferjobe/Projects/Cheatsheet/resources/index.css">
+        <!--title-->
+        <title>Cheatsheet101</title>
+    </head>
+
+    <nav class="navbar">
+           
+        <ul>
+            <li><a href="#structure">HTML<br>Structure</a></li>
+            <li><a href="#content">HTML<br>Content</a></li>
+            <li><a href="#boxmodel">CSS<br>Box-Model</a></li>
+            <li><a href="#Positioning">CSS<br>Positioning</a></li>
+        </ul>
+
+    </nav>
+
+    <body>
+   
+        <header>
+            
+            <div class="title">
+                <h1>Cheat Sheet</h1>
+                <h2>HTML & CSS 101</h2>
+            </div> 
+            
+        </header>
+
+        <main>
+
+        <!--HTML Structure section-->
+            <section id="structure">
+                <h3>HTML Structure</h3>
+            
+                <table>
+                    <!--Table One Header-->
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                        </tr>    
+                    </thead>
+                    
+                    <!--Table One Content-->
+                    <tbody>
+                    
+                        <tr>
+                            <td>&lt;!DOCTYPEhtml&gt;</td>
+                            <td>First line of code declaring document type to the browser and which web standards to apply.</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>&lt;html&gt;</td>
+                            <td>Document type that encloses all the code and content that makes up the webpage. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>Contains non-displayed general info about the page and meta data like the Title and links to stylesheets.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&lt;title&gt;</td>
+                            <td>In the head of the document, defines a title that is displayed in the tab or title bar.</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>&lt;body&gt;</td>
+                            <td>Page content of semantic html document. Only one per document. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&lt;header&gt;</td>
+                            <td>Introductory page section that can include navigation, logo, heading tags, search bar, etc.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&lt;a&gt;</td>
+                            <td>Anchor tag used to link internal and external pages or content on the same page.</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>&lt;main&gt;</td>
+                            <td>Primary content within the body of a webpage.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&lt;section&gt;</td>
+                            <td>Defines an area of the page with the same theme such as chapters or headings.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&lt;aside&gt;</td>
+                            <td>Page section of content indirectly related to the main page such as related links or advertisements etc.</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td>Page section at the end of the content block with infomation like copyright or links to relevant pages.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+        <!--HTML Content Section-->
+            <section id="content">
+                
+                <h3>HTML Content</h3>
+                
+                <!--Table Two Header-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                        </tr>    
+                    </thead>
+                
+                    <!--Table Two Content-->
+                <tbody>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Defines a block of navigation like menus or or table of contents.</td>
+                    </tr>
+                
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Creates a drop down list for navigation. </td>
+                    </tr>
+            
+                    <tr>
+                        <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                        <td>Leveled heading elements with h1 the highest level and h6 the lowest level for content text.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Self-contained part of page that could be published elsewhere like blogs or online articles.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Paragraph displays a block of text.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Line break. Only requires opening tag. </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>Element containg content of a list.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Ordered sequential list. Numbered by default. Encapsulates list content.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Unordered list. Bulleted by default. Encapsulates list content.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Encapsulates media such as an image, diagram, or code sinppet.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Describes the media within the figure.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Embeds images in documents with no closing tag.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Embeds media player for playback.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;embed&gt;</td>
+                        <td>Embeds external content such as video, audio, images, etc.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>Connects current page with an external page.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Content to represent a 2D table made of rows and columns.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Adds a row to the table before adding data and headings.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Defines headings of table columns encapsulated in table rows.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Adds titles to rows and columns, enclosed in &lt;tr&gt; table row element within the table head. </td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Contains all table data</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Table data nested in a table row &lt;tr&gt; to add a cell of data to a table.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Uses table row to give footer content or to sumerize content at the end of a table.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Container to divide into sections of non-semantic html.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Inline container of text for styling. non-semantic html.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Emphasizes text, italisied by default. non-semantic html.</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Highlights important, serious, urgent text, bold by default. non-semantic html.</td>
+                    </tr>                
+
+                </tbody>
+                </table>
+            </section>
+
+        <!--CSS Box-Model Section-->
+            <section id="boxmodel">
+                <h3>CSS Box-Model</h3>
+                
+                <!--Table Three Header-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property: Value;</th>
+                            <th>Description</th>
+                        </tr>    
+                    </thead>
+                
+                    <!--Table Three Content-->
+                <tbody>
+                        
+                        <tr>
+                            <td>box-sizing: border-box;</td>
+                            <td>Height and width of element. Includes: content box, padding, and borders. Resets the default (content-box)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>margin:</td>
+                            <td>Defines the space between the border and the outside edge of the box.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>border: width style color;</td>
+                            <td>Defines the border around the content and padding. Properties defined in same line of code separated by a space.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>border-radius: %;</td>
+                            <td>Modifies corners to create rounded boxes. 50% = circle.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>padding:</td>
+                            <td>Defines the space between the content and the border.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>width:</td>
+                            <td>Defines the width of the content, unless box-sizing is set to border-box.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>height:</td>
+                            <td>Defines the height of the content, unless box-sizing is set to border-box.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>min-width/height:</td>
+                            <td>Sets the minimum width/height of the element.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>max-width/height:</td>
+                            <td>Sets the maximum width/height of the element. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>overflow: hidden;</td>
+                            <td>Hides any content that spills outside the box.</td>
+                        </tr>
+
+                        <tr>
+                            <td>overflow: scroll;</td>
+                            <td>A scroll bar is added to view content that spills outside the box.</td>
+                        </tr>
+
+                        <tr>
+                            <td>overflow: visible;</td>
+                            <td>Content will be seen outside the box. Default. </td>
+                        </tr>
+
+                </tbody>
+                </table>
+            </section>
+
+
+        <!--CSS Positioning-->
+            <section id="positioning">
+                
+                <h3>CSS Positioning & Display</h3>
+            
+                <table>
+                    <!--Table 4 Header-->
+                    <thead>
+                        <tr>
+                            <th>Property: Value;</th>
+                            <th>Description</th>
+                        </tr> 
+                    </thead>
+                    <!--Table 4 Content-->
+                    <tbody>
+                        
+                        <tr>
+                            <td>position: static;</td>
+                            <td>Default, element remains in flow of document and appears in markup location. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>position: relative;</td>
+                            <td>Requires offset properties to move element away from default position. Creates reference positoin for absolute child elements. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>position: absolute;</td>
+                            <td>Removes element from flow of document and places in relation to closest relative positioned ancestor element. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>position: fixed;</td>
+                            <td>Removes element from flow of document and is always relative to the document markup location. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>position: sticky;</td>
+                            <td>The element is treated as relative until a specific point or threshold is met where the element then becomes fixed.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>z-index:</td>
+                            <td>Controls how far back or forward elements appear (depth). </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>display: block;</td>
+                            <td>Fills width of page creating a line break after element and can be set to height necessary to accomodate content. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>display: inline;</td>
+                            <td>Takes up as little space as possible. Occupy height and width of content and does not move. Default.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>display: inline-block;</td>
+                            <td>Content can be placed next to each other and can specify height and width.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>clear:</td>
+                            <td>Controls how elements behave when they bump into each other.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>float:</td>
+                            <td>In a static or relative position, moves an element left or right of its container. Used to wrap text around an image.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>
